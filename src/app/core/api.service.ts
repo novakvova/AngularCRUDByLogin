@@ -6,7 +6,7 @@ import {User} from '../model/user.model';
 export class ApiService {
 
   constructor(private http: HttpClient) { }
-  baseUrl = 'http://localhost:8080/user-portal/users';
+  baseUrl = 'https://localhost:44328/api/user-portal/users';
 
   getUsers() {
     return this.http.get<User[]>(this.baseUrl);

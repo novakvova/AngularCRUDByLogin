@@ -12,6 +12,7 @@ import { LoginComponent } from './login/login.component';
 import { AddUserComponent } from './add-user/add-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { ListUserComponent } from './list-user/list-user.component';
+import { TokenInterceptor } from './core/interceptor';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { ListUserComponent } from './list-user/list-user.component';
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [ApiService],
+  providers: [ApiService, TokenInterceptor],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
