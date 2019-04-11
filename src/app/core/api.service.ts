@@ -27,4 +27,8 @@ export class ApiService {
   deleteUser(id: number) {
     return this.http.delete(this.baseUrl + '/' + id);
   }
+
+  confirmUserEmail(userId: string, code: string) {
+    return this.http.put(this.baseUrl + '/confirmemail/' + userId, {code});
+  }
 }
