@@ -4,12 +4,14 @@ import {LoginComponent} from './login/login.component';
 import {AddUserComponent} from './add-user/add-user.component';
 import {ListUserComponent} from './list-user/list-user.component';
 import {EditUserComponent} from './edit-user/edit-user.component';
+import { ConfirmemailComponent } from './confirmemail/confirmemail.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'add-user', component: AddUserComponent },
   { path: 'list-user', component: ListUserComponent },
   { path: 'edit-user', component: EditUserComponent },
+  { path: 'confirmemail', component: ConfirmemailComponent },
   {path : '', component : LoginComponent}
 ];
 

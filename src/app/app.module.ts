@@ -13,6 +13,7 @@ import { AddUserComponent } from './add-user/add-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { TokenInterceptor } from './core/interceptor';
+import { ConfirmemailComponent } from './confirmemail/confirmemail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TokenInterceptor } from './core/interceptor';
     LoginComponent,
     AddUserComponent,
     EditUserComponent,
-    ListUserComponent
+    ListUserComponent,
+    ConfirmemailComponent
   ],
   imports: [
     BrowserModule,
