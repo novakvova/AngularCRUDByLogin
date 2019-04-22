@@ -15,7 +15,7 @@
       </div>
       <button class="btn btn-success" [disabled]="loginForm.invalid">Login</button>
       <div *ngIf="invalidLogin" class="error">
-        <div>Invalid credentials.</div>
+        <div>{{invalidLogin}}</div>
       </div>
     </form>
   </div>

@@ -5,8 +5,9 @@ export class User {
   email: string;
   salary: number;
   age: number;
-  constructor(id: number, firstName: string) {
-    this.id = id;
-    this.firstName = firstName;
-  }
+  emailConfirmed: boolean;
+  // constructor(id: number, firstName: string) {
+  //   this.id = id;
+  //   this.firstName = firstName;
+  // }
 }

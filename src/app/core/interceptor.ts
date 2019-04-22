@@ -6,11 +6,11 @@ import {Injectable} from '@angular/core';
 export class TokenInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-    const currentUser = '';
-    if (currentUser) {
+    const token = window.localStorage.getItem('token');
+    if (token) {
       request = request.clone({
         setHeaders: {
-          Authorization: 'Bearer ${currentUser.token}'
+          Authorization: 'Bearer ' + token
         }
       });
     }
